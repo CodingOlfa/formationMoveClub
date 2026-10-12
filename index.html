@@ -70,22 +70,17 @@
                     </a>
 
                 </div>
-
             </div>
 
 
             <div class="hero-image">
-
                 <div class="recycling-circle">
                     ♻
                 </div>
-
                 <p>
                     Recyclons ensemble
                 </p>
-
             </div>
-
         </section>
 
 
@@ -360,7 +355,6 @@
                 </article>
 
             </div>
-
         </section>
 
 
@@ -422,23 +416,48 @@
 
 
         <!-- ==================== CALL TO ACTION ==================== -->
-        <section class="cta">
+        
+<section class="cta">
+    
+    <form action="#" method="post">
 
-            <h2>
-                Un déchet à faire collecter ?
-            </h2>
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"
+                   placeholder="Saisir votre nom" required>
+        </div>
 
-            <p>
-                Participez à une ville plus propre
-                et contribuez au recyclage.
-            </p>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom"
+                   placeholder="Saisir votre prénom" required>
+        </div>
 
-            <a href="#" class="btn">
-                Signaler un déchet
-            </a>
+        <div class="form-group">
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse"
+                   placeholder="Adresse du lieu de collecte" required>
+        </div>
 
-        </section>
+        <div class="form-group">
+            <label for="typeDechet">Type de déchet :</label>
+            <select id="typeDechet" name="typeDechet" required>
+                <option value="">-- Choisir un type --</option>
+                <option value="plastique">Plastique</option>
+                <option value="papier">Papier et carton</option>
+                <option value="verre">Verre</option>
+                <option value="metal">Métal</option>
+                <option value="electronique">Déchets électroniques</option>
+                <option value="autre">Autre</option>
+            </select>
+        </div>
 
+        <button type="submit" class="btn">
+            Signaler le déchet
+        </button>
+
+    </form>
+</section>
 
     </main>
 
